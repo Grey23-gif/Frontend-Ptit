@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            margin-right: 30px;
+            display: inline-block;
+            width: 170px;
+        }
+        input,textarea{
+            margin-bottom: 15px;
+            margin-left: 5px;
+        }
+        .no-style{
+            all: unset;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>Họ và tên: </label>
+        <input id="name" name="name" width="50px"><br>
+        <label>Ngày sinh: </label>
+        <input type="date" id="date" name="date"><br>
+        <label >Giới tính</label>
+        <label class="no-style"><input type="radio" name="gender" value="male" >Nam</label>
+        <label class="no-style"><input type="radio" name="gender" value="female">Nữ</label><br>
+        <label >Số căn cước công dân: </label>
+        <input  id="cccd" name="cccd" width="50px"><br>
+        <label>Ngày cấp: </label>
+        <input type="date" id="datecccd" name="datecccd"><br>
+        <label>Nơi cấp: </label>
+        <input id="addcccd" name="addcccd" width="50px"><br>
+        <label>Số điện thoại: </label>
+        <input type="tel" id="phone" name="phone" pattern="(\+84|0)[3-9][0-9]{8}" width="50px" required><br>
+        <label>Email: </label>
+        <input id="email" name="email" width="50px" required><br>
+        <label style="vertical-align: middle ;">Địa chỉ thường trú: </label>
+        <textarea style="vertical-align: middle;" id="address" name="address" rows="2" cols="30"></textarea><br>
+        <label style="vertical-align: middle ;">Địa chỉ tạm trú: </label>
+        <textarea style="vertical-align: middle;" id="addresstt" name="addresstt" rows="2" cols="30"></textarea><br>
+        <label>Loại Căn cước công dân</label>
+        <label class="no-style"><input type="radio" name="cccd" value="new">Căn cước công dân mới</label>
+        <label class="no-style"><input type="radio" name="cccd" value="old">Căn cước công dân cũ</label><br>
+        <label>Dân tộc: </label>
+        <input id="chn" name="chn" width="50px" required><br>
+        <label>Tôn giáo: </label>
+        <input  id="chn" name="chn" width="50px" required><br>
+        <label>Quốc tịch: </label>
+        <input  id="gpa" name="gpa" width="50px" required><br>
+        <label>Họ tên cha/mẹ: </label>
+        <input id="namecm" name="namecm" width="50px"><br>
+        <label>Số căn cước công dân: </label>
+        <input  id="cccd" name="cccd" width="50px"><br>
+       
+        <label>Tỉnh/Thành phố: </label>
+        <select name="class">
+            <option value="l1">Hà nội</option>
+            <option value="l2">TP.HCM</option>
+            <option value="l3">Đồng Nai</option>
+            <option value="l4">Bình Dương</option>
+            <option value="l5">Đà Nẵng</option>
+            <option value="l6">Khác</option>
+        </select><br>
+        <button type="submit">Gửi thông tin</button>
+    </form>
+</body>
+</html>
