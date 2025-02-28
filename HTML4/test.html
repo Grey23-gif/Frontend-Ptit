@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chữ Đè Lên Đường Viền Table</title>
+    <style>
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td {
+            border: 2px solid black;
+            height: 100px;
+            text-align: center;
+            position: relative;
+        }
+        .text-overlay {
+            position: absolute;
+            top: -12px; /* Đẩy chữ lên trên viền */
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 0 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>
+            <div class="text-overlay">Chữ Đè Lên Viền</div>
+            Nội dung ô
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
