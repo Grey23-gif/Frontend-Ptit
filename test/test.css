@@ -1,0 +1,77 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Thanh điều hướng */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1f24;
+    color: white;
+    padding: 15px 20px;
+}
+
+.navbar h2 {
+    font-size: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Phần giới thiệu */
+.intro {
+    background-color: #e8e8e8;
+    padding: 40px;
+}
+
+.intro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Dự án */
+.projects {
+    padding: 20px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.project {
+    background-color: #1d1f24;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 120px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
