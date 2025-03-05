@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    width: 320px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.status {
+    display: inline-block;
+    background: #ffe0b2;
+    color: #d9822b;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.info p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.budget {
+    font-weight: bold;
+    color: black;
+}
+
+.progress-section {
+    margin: 15px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #fde7c4;
+    border-radius: 3px;
+    position: relative;
+}
+
+.progress-fill {
+    height: 6px;
+    background: #d9822b;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-text {
+    float: right;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.dates p {
+    font-size: 13px;
+    color: #555;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.avatars img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: -10px;
+    border: 2px solid white;
+}
+
+.footer p {
+    font-size: 14px;
+    color: black;
+}

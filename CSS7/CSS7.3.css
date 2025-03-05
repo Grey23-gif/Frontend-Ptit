@@ -1,0 +1,35 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 550px;
+    height: 550px;
+    background-color: white;
+}
+
+.star{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.star img{
+    width: 20px;
+    margin: 10px;
+}
+h2{
+    margin: 10px;
+}
+.picture img{
+    width: 550px;
+    height: 300px;
+}
+.container-title{
+    font-weight: bold;
+    font-size: 20px;
+}
+.container-content{
+    color: rgb(129, 123, 123);
+    margin-top: 10px;
+}

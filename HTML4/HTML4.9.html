@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+</head>
+<body>
+        <h1>CatPhotoApp</h1>
+        <h3>CatPhotos</h3>
+        <p>Everyone loves <a href="https://www.pinterest.com/honganh2612/cats-cute/">cute cats</a> online!</p>
+        <p>See more <a href="https://www.pexels.com/search/cat/">cat photos</a> in our gallery.</p>
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNGCxC5gx6lEeMo4PksLSSjaJWRLBS-SoF7A&s"
+            width="300"
+            height="300"
+            alt="cat"
+        />
+
+        <h3>Catlist</h3>
+        <h4>Things cat love</h4>
+        <ul>
+            <li>Cat nip</li>
+            <li>Laser pointers</li>
+            <li>Lasagna</li>
+            <img
+            src="https://beptruong.edu.vn/wp-content/uploads/2017/12/lasagna-truyen-thong-600x400.jpg"
+            width="300"
+            height="300"
+            alt="lasagna"
+        />
+        <p>Cat love lasagna</p>
+        </ul>
+        
+       
+        <h4>Top 3 things cats hate</h4>
+        <ol type="1">
+            <li>Flea treatment</li>
+            <li>Thunder</li>
+            <li>Other cats</li>
+            <img
+            src="https://live.staticflickr.com/5054/5485190104_8ce05579a7_b.jpg"
+            width="300"
+            height="300"
+            alt="lasagna"
+        />
+        <p>Cat <b>hate</b> other cats </p> 
+        </ol>
+        <h3>Cat Breed</h3>
+    <table border="1">
+      <tr>
+        <th>Breed</th>
+        <th>Location of origin</th>
+        <th>Type</th>
+        <th>Body type</th>
+        <th>Coat type and length</th>
+        <th>Coat pattern</th>
+        <th>Image</th>
+      </tr>
+      <tr>
+        <td><a href="">Abyssinian</a></td>
+        <td>Unspecified, but somewhere in Afro-Asia, likely Ethiopia</td>
+        <td>Natrual</td>
+        <td>Semi-foreign</td>
+        <td>Short</td>
+        <td>Ticked tabby</td>
+        <td>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/640px-Cat03.jpg"
+            alt="Abyssinian Cat"
+            height="200"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><a href="">Aegean</a></td>
+        <td>Greece</td>
+        <td>Natural</td>
+        <td>Moderate</td>
+        <td>Semi-long</td>
+        <td>Multi-color</td>
+        <td>
+          <img
+            src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg"
+            alt="Aegean Cat"
+            height="134"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><a href="American Bobtail">American Bobtail</a></td>
+        <td>United States</td>
+        <td>Mutation of shortened tail</td>
+        <td>Cobby</td>
+        <td>Semi-long</td>
+        <td>All</td>
+        <td>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDCsqRYLAFDdL4Ix_AHai7kNVyoPV9Ssv1xg&s"
+            alt="American Bobtail Cat"
+            height="200"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><a href="American Curl">American Curl</a></td>
+        <td>United States</td>
+        <td>Mutation</td>
+        <td>Semi-foreign</td>
+        <td>Semi-long</td>
+        <td>All</td>
+        <td>
+          <img
+            src="https://cdn.britannica.com/39/226539-050-D21D7721/Portrait-of-a-cat-with-whiskers-visible.jpg"
+            alt="American Curl Cat"
+            height="135"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><a href="American Ringtail">American Ringtail</a></td>
+        <td>United States</td>
+        <td>Mutation</td>
+        <td>Foreign</td>
+        <td>Semi-long</td>
+        <td>All</td>
+        <td>
+          <img
+            src="https://www.whiskas.in/sites/g/files/fnmzdf2051/files/2024-10/cat-play.png"
+            alt="American Ringtail Cat"
+            height="108"
+          />
+        </td>
+      </tr>
+    </table>
+    <h2>Cat Form</h2>
+
+    <form>
+      <fieldset>
+        <legend>Is your cat an indoor or outdoor cat?</legend>
+        <input
+          type="radio"
+          id="indoor"
+          name="cat_type"
+          value="indoor"
+          checked
+        />
+        <label for="indoor">Indoor</label>
+        <input type="radio" id="outdoor" name="cat_type" value="outdoor" />
+        <label for="outdoor">Outdoor</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What's your cat's personality?</legend>
+        <input
+          type="checkbox"
+          id="loving"
+          name="personality"
+          value="loving"
+          checked
+        />
+        <label for="loving">Loving</label>
+        <input type="checkbox" id="lazy" name="personality" value="lazy" />
+        <label for="lazy">Lazy</label>
+        <input
+          type="checkbox"
+          id="energetic"
+          name="personality"
+          value="energetic"
+        />
+        <label for="energetic">Energetic</label>
+      </fieldset>
+
+      <p>
+        <input type="text" placeholder="cat photo URL" />
+        <input type="submit" value="Submit" />
+      </p>
+    </form>
+    <p>
+        No Copyright -
+        <a href="https://rikkei.edu.vn" target="_blank">rikkei.edu.vn</a>
+      </p>
+</body>
+</html>

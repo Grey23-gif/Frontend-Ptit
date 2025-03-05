@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 100%;
+            border: 2px solid white; 
+        }
+        th, td {
+             border: 1px solid white; 
+             padding: 10px;
+            text-align: center;
+     }
+
+        th {
+            background-color: rgb(25, 0, 255);
+            color: white;
+         }
+
+        tr:nth-child(odd) {
+        background-color: rgba(235, 226, 226, 0.996);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <H2>ARTICLE MANAGEMENT TABLE</H2>
+        <table border="1" cellspacing="0">
+            <thead>
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>AUTHOR</th>
+                <th>PUBLISHED DATE</th>
+                <th colspan="3">Actions</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Introduction to CSS</td>
+                    <td>John Doe</td>
+                    <td>2024-02-10</td>
+                    <td ><span style="background-color: rgb(6, 218, 6);padding: 5px;color: white;">View</span></td>
+                    <td ><span style="background-color: rgb(196, 203, 8);padding: 5px;color: rgb(0, 0, 0);">Update</span></td>
+                    <td ><span style="background-color: rgb(223, 17, 6);padding: 5px;color: white;">Delete</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Understanding Javascipt</td>
+                    <td>Jane Smith</td>
+                    <td>2024-01-22</td>
+                    <td ><span style="background-color: rgb(6, 218, 6);padding: 5px;color: white;">View</span></td>
+                    <td ><span style="background-color: rgb(196, 203, 8);padding: 5px;color: rgb(0, 0, 0);">Update</span></td>
+                    <td ><span style="background-color: rgb(223, 17, 6);padding: 5px;color: white;">Delete</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Wed Developement Basics</td>
+                    <td>Mike Johnson</td>
+                    <td>2023-12-15</td>
+                    <td ><span style="background-color: rgb(6, 218, 6);padding: 5px;color: white;">View</span></td>
+                    <td ><span style="background-color: rgb(196, 203, 8);padding: 5px;color: rgb(0, 0, 0);">Update</span></td>
+                    <td ><span style="background-color: rgb(223, 17, 6);padding: 5px;color: white;">Delete</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Responsive Design Techniques</td>
+                    <td>Sarah Lee</td>
+                    <td>2023-11-30</td>
+                    <td ><span style="background-color: rgb(6, 218, 6);padding: 5px;color: white;">View</span></td>
+                    <td ><span style="background-color: rgb(196, 203, 8);padding: 5px;color: rgb(0, 0, 0);">Update</span></td>
+                    <td ><span style="background-color: rgb(223, 17, 6);padding: 5px;color: white;">Delete</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>SEO Best Practices</td>
+                    <td>Chris Brown</td>
+                    <td>2023-10-18</td>
+                    <td ><span style="background-color: rgb(6, 218, 6);padding: 5px;color: white;">View</span></td>
+                    <td ><span style="background-color: rgb(196, 203, 8);padding: 5px;color: rgb(0, 0, 0);">Update</span></td>
+                    <td ><span style="background-color: rgb(223, 17, 6);padding: 5px;color: white;">Delete</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

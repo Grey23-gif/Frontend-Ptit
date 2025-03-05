@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            margin-right: 30px;
+            display: inline-block;
+            width: 250px;
+        }
+        input,textarea,select{
+            margin-bottom: 15px;
+            margin-left: 5px;
+            display: inline-block;
+        }
+        .no-style{
+            all: unset;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <label>Họ và tên: </label>
+        <input id="name" name="name" width="50px"><br>
+        <label>Ngày sinh: </label>
+        <input type="date" id="date" name="date"><br>
+        <label >Giới tính</label>
+        <label class="no-style"><input type="radio" name="gender" value="male" >Nam</label>
+        <label class="no-style"><input type="radio" name="gender" value="female">Nữ</label><br>
+        <label>Số điện thoại: </label>
+        <input type="tel" id="phone" name="phone" pattern="(\+84|0)[3-9][0-9]{8}" width="50px" required><br>
+        <label>Email: </label>
+        <input id="email" name="email" width="50px" required><br>
+        <label>Tên công ty: </label>
+        <input id="namecty" name="namecty" width="50px"><br>
+        <label>Vai trò trong công ty</label>
+        <select id="role">
+            <option value="ceo">Giám đốc điều hành (CEO)</option>
+            <option value="finance-accounting">Tài Chính-Kế Toán</option>
+            <option value="marketing-Sales">Marketing-Bán hàng</option>
+            <option value="hr">Nhân sự</option>
+            <option value="it">Công nghệ thông tin</option>
+            <option value="operation">Vận hành</option>
+            <option value="customer-service">Dịch vụ khách hàng</option>
+            <option value="research-development">Nghiên cứu và phát triển</option>
+            <option value="legal">Pháp lý</option>
+            <option value="manager">Quản lý</option>
+            <option value="staff">Nhân viên</option>
+            <option value="other">Khác</option>
+        </select><br>
+        <label>Quy mô công ty</label>
+        <select id="company-size">
+            <option value="tiny">Doanh nghiệp siêu nhỏ</option>
+            <option value="small">Doanh nghiệp nhỏ</option>
+            <option value="medium">Doanh nghiệp vừa</option>
+            <option value="large">Doanh nghiệp lớn</option>
+            <option value="huge">Doanh nghiệp siêu lớn</option>
+        </select><br>
+        <label>Ngành nghề công ty: </label>
+        <input id="name" name="name" width="50px"><br>
+        <label style="vertical-align: middle ;">Lý do tham gia câu lạc bộ:  </label>
+        <textarea style="vertical-align: middle;" id="LD" name="LD" rows="2" cols="30"></textarea><br>
+        <label style="vertical-align: middle ;">Kinh nghiệm lãnh đạo: </label>
+        <textarea style="vertical-align: middle;" id="KN" name="KN" rows="2" cols="30"></textarea><br>
+        <label style="vertical-align: middle ;">Mục tiêu khi tham gia câu lạc bộ: </label>
+        <textarea style="vertical-align: middle;" id="MT" name="MT" rows="2" cols="30"></textarea><br>
+        <label>Chương trình sự kiện muốn tham gia: </label>
+        <label class="no-style"><input type="checkbox"  name="CT" value="S">Networking</label>
+        <label class="no-style"><input type="checkbox"  name="CT" value="C">Workshops</label>
+        <label class="no-style"><input type="checkbox" name="CT" value="T">Hội thảo</label> <br>
+        <label>Đăng kí nhận bảng tin</label>
+        <label class="no-style"><input type="checkbox"  name="Yes" value="S">Có</label><br>
+        <button type="submit">Đăng kí hội viên</button>
+    </form>
+</body>
+</html>

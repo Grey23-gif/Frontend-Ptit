@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+       table {
+    width: 100%;
+    border-collapse: collapse; 
+    border: 2px solid white; 
+}
+
+th, td {
+    border: 1px solid white; 
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(25, 0, 255);
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(235, 226, 226, 0.996);
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h2 style="font-weight: bold;">ADMIN USER TABLE</h2>
+        <table border="1">
+        <thead >
+        <th>ID</th>
+        <th>USERNAME</th>
+        <th>EMAIL</th>
+        <th>ROLE</th>
+        </thead >
+        <tbody>
+            <tr>
+            <td>1</td>
+            <td>admin01</td>
+            <td>admin01@example.com</td>
+            <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>user123</td>
+                <td>user123@example.com</td>
+                <td>User</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Moderator</td>
+                <td>Moderator56@example.com</td>
+                <td>Moderator</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>

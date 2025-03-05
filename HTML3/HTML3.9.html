@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            margin-right: 30px;
+            display: inline-block;
+            width: 200px;
+        }
+        input,textarea,select{
+            margin-bottom: 15px;
+            margin-left: 5px;
+            display: inline-block;
+        }
+        .no-style{
+            all: unset;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <label>Họ và tên: </label>
+        <input id="name" name="name" width="50px"><br>
+        <label>Ngày sinh: </label>
+        <input type="date" id="date" name="date"><br>
+        <label >Giới tính</label>
+        <label class="no-style"><input type="radio" name="gender" value="male" >Nam</label>
+        <label class="no-style"><input type="radio" name="gender" value="female">Nữ</label><br>
+        <label >Số căn cước công dân: </label>
+        <input  id="cccd" name="cccd" width="50px"><br>
+        <label>Ngày cấp: </label>
+        <input type="date" id="datecccd" name="datecccd"><br>
+        <label>Nơi cấp: </label>
+        <input id="addcccd" name="addcccd" width="50px"><br>
+        <label>Số điện thoại: </label>
+        <input type="tel" id="phone" name="phone" pattern="(\+84|0)[3-9][0-9]{8}" width="50px" required><br>
+        <label>Email: </label>
+        <input id="email" name="email" width="50px" required><br>
+        <label style="vertical-align: middle ;">Địa chỉ thường trú: </label>
+        <textarea style="vertical-align: middle;" id="address" name="address" rows="2" cols="30"></textarea><br>
+        <label >Vai trò trong nhóm</label>
+        <select name="role">
+            <option value="l1">Thành viên</option>
+            <option value="l2">Hỗ trợ</option>
+            <option value="l3">Chuyên môn</option>
+            <option value="l4">Người phát ngôn</option>
+            <option value="l5">Quản lí</option>
+            <option value="l6">Lãnh đạo</option>
+        </select><br>
+        <label>Sở thích: </label>
+        <input id="fv" name="fv" width="50px"><br>
+        <label style="vertical-align: middle ;">Kĩ năng: </label>
+        <textarea style="vertical-align: middle;" id="Skill" name="Skill" rows="2" cols="30"></textarea><br>
+        <label >Thời gian rảnh: </label>
+        <label class="no-style"><input type="checkbox"  name="free-time" value="S">Sáng</label>
+        <label class="no-style"><input type="checkbox"  name="free-time" value="C">Chiều</label>
+        <label class="no-style"><input type="checkbox" name="free-time" value="T">Tối</label> <br>
+        <label style="vertical-align: middle ;">Lý do tham gia nhóm: </label>
+        <textarea style="vertical-align: middle;" id="Why" name="Why" rows="2" cols="30"></textarea><br>
+        <label for="fav-color">Chọn màu yêu thích:</label>
+        <input type="color" id="fav-color" name="fav-color"><br>
+        <label>Đăng kí nhận bảng tin</label>
+        <label class="no-style"><input type="checkbox"  name="Yes" value="S">Có</label>
+        </select><br>
+        <label>Nhận thông báo qua Email: </label>
+        <label class="no-style"><input type="checkbox"  name="email" value="S">Email</label>
+        <label class="no-style"><input type="checkbox"  name="sms" value="S">SMS</label>
+        </select><br>
+        <button type="submit">Đăng kí thành viên</button>
+    </form>
+</body>
+</html>
