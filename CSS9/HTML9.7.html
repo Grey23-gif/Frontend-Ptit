@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            width: 100%;
+            margin: auto;
+        }
+        .P1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            padding: 15px 50px;
+            background-color: #333;
+            color: white;
+        }
+        .list {
+            display: flex;
+            gap: 20px;
+        }
+        .list a {
+            text-decoration: none;
+            color: white;
+        }
+        .list a:hover {
+            text-decoration: underline;
+        }
+        .P2 {
+           background-color: #F4F4F4;
+            width: 500px;
+            margin: 50px auto 50px 300px; 
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .P2 h3 {
+            margin-bottom: 15px;
+        }
+        .P2 h4 {
+            margin-top: 15px;
+        }
+        .P2 p {
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        .P2 a {
+            text-decoration: none;
+            color: blue;
+        }
+        .P2 a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="P1">
+            <h2>MY BLOG</h2>
+            <div class="list">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Posts</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        
+        <div class="P2">
+            <div class="P2_1">
+                <h3><strong>Bài viết nổi bật</strong></h3>
+                <h4>Tiêu đề bài viết chính</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla eu lorem tincidunt tristique.</p>
+                <a href="#">Đọc thêm</a>
+            </div>
+            <hr>
+            <div class="P2_2">
+                <h3><strong>Các bài viết khác</strong></h3>
+                <h4>Bài viết 1</h4>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <h4>Bài viết 2</h4>
+                <p>Ut nulla eu lorem tincidunt...</p>
+                <h4>Bài viết 3</h4>
+                <p>Consectetur adipiscing elit...</p>
+            </div>
+        </div>
+
+        <footer>
+            © 2023 My Blog. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

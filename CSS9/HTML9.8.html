@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #222;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .navbar a:hover {
+            background: #444;
+        }
+        .welcome {
+            text-align: center;
+            padding: 50px;
+            background: #f4f4f4;
+        }
+        .welcome p {
+            margin: 10px 0;
+            color: #333;
+        }
+        .btn {
+            background: black;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #333;
+        }
+        .featured {
+            text-align: center;
+            padding: 50px;
+        }
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project {
+            width: 150px;
+            height: 150px;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .project-box {
+            width: 150px;
+            height: 150px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .project-text {
+            margin-top: 8px;
+            margin-top: 20px;
+        }
+        .about {
+            background: #f4f4f4;
+            padding: 50px;
+            text-align: center;
+        }
+        .about p {
+            
+            margin: auto;
+            color: #333;
+        }
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Portfolio Website</div>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="welcome">
+        <h2>Welcome to my portfolio website</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id ultrices tellus.</p>
+        <a href="#" class="btn">View Portfolio</a>
+    </div>
+    <div class="featured">
+        <h2>Featured Work</h2>
+        <div class="projects">
+            <div>
+                <div class="project-box">150 x 150</div>
+                <p class="project-text">Project 1</p>
+            </div>
+            <div>
+                <div class="project-box">150 x 150</div>
+                <p class="project-text">Project 2</p>
+            </div>
+            <div>
+                <div class="project-box">150 x 150</div>
+                <p class="project-text">Project 3</p>
+            </div>
+            <div>
+                <div class="project-box">150 x 150</div>
+                <p class="project-text">Project 4</p>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id ultrices tellus. Duis tristique nulla ex, nec lobortis risus maximus a.</p>
+    </div>
+    <div class="footer">&copy; 2023 Portfolio Website</div>
+</body>
+</html>

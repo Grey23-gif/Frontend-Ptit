@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #222;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            color: black;
+            padding-bottom: 20px;
+        }
+        .hero {
+            position: relative;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero-text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-align: left;
+            padding: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .box {
+            position: relative;
+            overflow: hidden;
+        }
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .box-text {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: white;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .box-text_1 {
+            position: absolute;
+            top: 70%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: white;
+            text-align: left;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .signup {
+            background: darkred;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .signup button {
+            padding: 10px 20px;
+            background: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 310px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <img src="https://cdn-media.sforum.vn/storage/app/media/Van%20Pham/hinh-anh-viet-nam-dep.jpg" alt="We like balloons">
+            <div class="hero-text">We like balloons<br><span style="font-size: 14px; font-weight: normal;">You can find all kinds of balloon related things here.</span></div>
+        </div>
+
+        <!-- Grid Section -->
+        <div class="grid">
+            <div class="box">
+                <img src="https://images2.thanhnien.vn/528068263637045248/2024/1/25/e093e9cfc9027d6a142358d24d2ee350-65a11ac2af785880-17061562929701875684912.jpg" alt="Angry people at balloon fiestas">
+                <div class="box-text">Angry people at balloon fiestas</div>
+                <div class="box-text_1">Hot air ballons. A bit weather sensitive.</div>
+            </div>
+            <div class="box">
+                <img src="https://aphoto.vn/wp-content/uploads/2019/01/anhdep6.jpg" alt="Balloon photos">
+                <div class="box-text">Balloon photos</div>
+                <div class="box-text_1">I have quite few</div>
+            </div>
+            <div class="box">
+                <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/11/15/766184/Anh3.jpg" alt="Special Shapes">
+                <div class="box-text">Special Shapes</div>
+                <div class="box-text_1">Why are some of them so scary looking? </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="box">
+                <img src="https://anhvienpiano.com/wp-content/uploads/2020/05/gio-vang-chup-anh-qua-trinh.jpg" alt="10 things you discover when taking a balloon ride">
+                <div class="box-text">10 things you discover when taking a balloon ride</div>
+                <div class="box-text_1">Number 8 will AMAZE you.</div>
+            </div>
+            
+            <div class="signup">
+                Sign up for more information about balloons.<br>
+                <button>Sign me up!</button>
+            </div>
+
+            <div class="box">
+                <img src="https://cdn-media.sforum.vn/storage/app/media/Van%20Pham/hinh-anh-viet-nam-dep.jpg" alt="10 things you discover when taking a balloon ride">
+                <div class="box-text">10 things you discover when taking a balloon ride</div>
+                <div class="box-text_1">Number 8 will AMEZE you.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

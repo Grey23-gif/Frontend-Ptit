@@ -1,42 +1,136 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Mẫu</title>
-    <link rel="stylesheet" href="test.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <h3>MyLogo</h3>
-      <div class="nav-links">
-        <a class="nav-item" href="#">Home</a>
-        <a class="nav-item" href="#">About</a>
-        <a class="nav-item" href="#">Service</a>
-        <a class="nav-item" href="#">Contact</a>
-      </div>
-    </header>
-
-    <!-- Hero Section -->
-    <main>
-      <div class="hero-section">
-        <h1>Welcome to My Website</h1>
-        <p>We provide the best solutions for your business.</p>
-        <button>Get Started</button>
-      </div>
-
-      <!-- Features -->
-      <section class="projects">
-        <a href="#" class="feature-item">Feature 1</a>
-        <a href="#" class="feature-item">Feature 2</a>
-        <a href="#" class="feature-item">Feature 3</a>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p>Contact us: email@example.com</p>
-    </footer>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f2f2f2;
+            color: black;
+        }
+        .header {
+            background-color: #039be5;
+            color: white;
+            padding: 15px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #039be5;
+            padding: 10px 20px;
+        }
+        .tabs {
+            display: flex;
+        }
+        .tab {
+            padding: 10px 15px;
+            color: white;
+            cursor: pointer;
+        }
+        .tab:hover {
+            background-color: #0288d1;
+        }
+        .active {
+            border-bottom: 3px solid white;
+        }
+        .right-buttons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .right-buttons button {
+            background: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .notification-icon {
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        .profile-pic {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: url('https://via.placeholder.com/30') no-repeat center/cover;
+        }
+        .content {
+            background: white;
+            max-width: 900px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+        .search-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .search-container input {
+            border: none;
+            outline: none;
+            background: transparent;
+            width: 100%;
+            padding: 5px;
+        }
+        .search-container button {
+            background: #039be5;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .user-list {
+            margin-top: 20px;
+            text-align: center;
+            color: gray;
+            font-size: 16px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">Authentication</div>
+    <div class="top-bar">
+        <div class="tabs">
+            <div class="tab active">Users</div>
+            <div class="tab">Sign-in method</div>
+            <div class="tab">Templates</div>
+            <div class="tab">Usage</div>
+        </div>
+        <div class="right-buttons">
+            <span style="color: white; cursor: pointer;">Go to docs</span>
+            <span class="notification-icon"><i class="fas fa-bell"></i></span>
+            <button>Web setup</button>
+            <div class="profile-pic"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="search-container">
+            <input type="text" placeholder="Search by email address, phone number, or user UID">
+            <button>Add user</button>
+        </div>
+        <div class="user-list">
+            No users for this project yet
+        </div>
+    </div>
+</body>
 </html>
