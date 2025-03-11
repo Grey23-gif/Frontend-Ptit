@@ -3,86 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Flexbox Layout</title>
+    <title>Trang Tin Tức</title>
     <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: whitesmoke;
-    padding: 20px;
-}
-
-.container {
-    background-color: white;
-    width: 90%;
-    max-width: 1024px;
-    display: grid;
-    gap: 10px;
-    padding: 20px;
-}
-
-/* Màu sắc cho các box */
-.box {
-    background: #78bcbe;
-    height: 100px;
-}
-
-.box:nth-child(2) { background: #eb5c4a; }
-.box:nth-child(3) { background: #f7b343; }
-.box:nth-child(4) { background: #96caca; }
-.box:nth-child(5) { background: #FF6F61; }
-.box:nth-child(6) { background: #FFA500; }
-.box:nth-child(7) { background: #8A2BE2; }
-
-/* Desktop Layout */
-@media (min-width: 1025px) {
-    .container {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr); /* Chia layout thành 6 cột bằng nhau */
-    }
-
-    .box:nth-child(1) { grid-column: span 6; } /* Chiếm toàn bộ 6 cột */
-    .box:nth-child(2) { grid-column: span 3; } /* Chiếm 3/6 = 1/2 */
-    .box:nth-child(3) { grid-column: span 3; } /* Chiếm 3/6 = 1/2 */
-    .box:nth-child(4) { grid-column: span 6; } /* Chiếm toàn bộ 6 cột */
-    .box:nth-child(5) { grid-column: span 2; } /* Chiếm 2/6 = 1/3 */
-    .box:nth-child(6) { grid-column: span 2; } /* Chiếm 2/6 = 1/3 */
-    .box:nth-child(7) { grid-column: span 2; } /* Chiếm 2/6 = 1/3 */
-}
-
-/* Mobile Layout */
-@media (max-width: 1024px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .box {
-        width: 100%;
-    }
-}
-
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+        .header {
+            background: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ddd;
+        }
+        .nav {
+            display: flex;
+            gap: 15px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            color: #007bff;
+        }
+        .epaper {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+        }
+        .main-content {
+            flex: 2;
+            background: white;
+            padding: 15px;
+        }
+        .sidebar {
+            flex: 1;
+            background: white;
+            padding: 15px;
+        }
+        .news-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .news-img {
+            width: 100%;
+            height: auto;
+        }
+        .top-stories, .quick-bites {
+            margin-top: 20px;
+        }
+        .top-stories h3, .quick-bites h3 {
+            background: yellow;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+    <div class="header">
+        <div class="nav">
+            <a href="#">World</a>
+            <a href="#">Politics</a>
+            <a href="#">Business</a>
+            <a href="#">Opinion</a>
+            <a href="#">Tech</a>
+            <a href="#">Science</a>
+            <a href="#">Health</a>
+            <a href="#">Sports</a>
+            <a href="#">Entertainment</a>
+            <a href="#">Travel</a>
+            <a href="#">More</a>
+        </div>
+        <div class="epaper">E-PAPER</div>
     </div>
-
+    
+    <div class="container">
+        <div class="main-content">
+            <img src="image.png" alt="News Image" class="news-img">
+            <p class="news-title">What One Photo Tells Us About North Korea’s Nuclear Program</p>
+            <p>Clues from a propaganda photo reveal details about North Korea’s expanding weapons programs and internal politics.</p>
+        </div>
+        
+        <div class="sidebar">
+            <div class="top-stories">
+                <h3>TOP STORIES</h3>
+                <ul>
+                    <li>PM unveils Shiva statue in Coimbatore on Mahashivratri</li>
+                    <li>PM Modi: Kanpur train accident was a conspiracy</li>
+                    <li>‘Sena, BJP have no option but to join hands again’</li>
+                    <li>Thousands bid adieu to martyred jawan in Kashmir</li>
+                </ul>
+            </div>
+            <div class="quick-bites">
+                <h3>QUICK BITES</h3>
+                <p>Stocks Sell Off, Gold Rises Ahead of Trump Speech: Markets Wrap</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Tin Tức & Xếp Hạng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .news, .ranking {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .news {
+            width: 60%;
+        }
+        .ranking {
+            width: 35%;
+        }
+        .news-section {
+            display: flex;
+            gap: 10px;
+        }
+        .news-main {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .news-main img {
+            width: 300px;
+            height: auto;
+            display: block;
+        }
+        .news-main .overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .news-list {
+            background-color: #EBEEF3;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 10px;
+        }
+        .news-list button  {
+            background-color: #B8C2CE;
+            width: 100px;
+            height: auto;
+            padding: 5px;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        .news-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .news-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .news-item .caption {
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="news">
+            <h2>Recent News</h2>
+            <div class="news-section">
+                <div class="news-main">
+                    <img src="https://tinhhoavothuat.com/wp-content/uploads/2023/06/taekwondo-tinh-hoa-vo-thuat-7-1200x900.jpg" alt="Baku 2023 World Taekwondo Championships">
+                    <div class="overlay">
+                        <p>Day 5 Highlights</p>
+                        <h3>Baku 2023 World Taekwondo Championships</h3>
+                    </div>
+                </div>
+                <div class="news-list">
+                    <div class="news-item">
+                        <img src="https://hoiana.com/wp-content/uploads/2024/11/khoa-hoc-golf-viet-nam-14-scaled.webp" alt="Open Championship">
+                        <div class="caption">Open Championship Royal Liverpool Golf - 20 July 2023</div>
+                    </div>
+                    <div class="news-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwsiTELzQ257ZCyCt8K5v8wQnZxz-l5Bbopg&s" alt="Ireland Tour">
+                        <div class="caption">Ireland Tour of England Test 2023 - 27 July 2023</div>
+                    </div>
+                    <div class="news-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5xsJ_KfelTRTENZLerV-DyzwwsNzrrGw9Qg&s" alt="Football Tournament">
+                        <div class="caption">International Football Tournament - 15 August 2023</div>
+                    </div>
+                    <button>More -></button>
+                </div>
+            </div>
+        </div>
+        <div class="ranking">
+            <h2>Clubs Ranking</h2>
+            <table>
+                <tr>
+                    <th>Club</th><th>GP</th><th>W</th><th>D</th><th>L</th><th>F</th><th>A</th><th>GD</th>
+                </tr>
+                <tr><td>Manchester City</td><td>38</td><td>29</td><td>6</td><td>3</td><td>99</td><td>26</td><td>73</td></tr>
+                <tr><td>Liverpool</td><td>38</td><td>28</td><td>8</td><td>2</td><td>94</td><td>26</td><td>68</td></tr>
+                <tr><td>Chelsea</td><td>38</td><td>21</td><td>11</td><td>6</td><td>76</td><td>33</td><td>43</td></tr>
+                <tr><td>Tottenham Hotspur</td><td>38</td><td>22</td><td>5</td><td>11</td><td>69</td><td>40</td><td>29</td></tr>
+                <tr><td>Arsenal</td><td>38</td><td>22</td><td>3</td><td>13</td><td>61</td><td>48</td><td>13</td></tr>
+                <tr><td>Manchester United</td><td>38</td><td>16</td><td>10</td><td>12</td><td>57</td><td>57</td><td>0</td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

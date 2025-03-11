@@ -1,43 +1,86 @@
-.container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #BABABA;
+  color: #333;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   align-items: center;
+  padding: 40px;
 }
 
-.row {
+.container {
+  width: 60%;
+  background-color: #BABABA;
+  padding: 20px;
+  border-radius: 10px;
+ 
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.work-item {
   display: flex;
-  gap: 10px;
   align-items: center;
+  background-color: #BABABA;
+  padding: 15px;
+  
+  margin-bottom: 15px;
+  border-bottom: 2px solid #D4D4D4;
 }
 
-.big-box {
-  width: 400px; /* Chiều rộng lớn hơn */
-  height: 145px;
-  background-color: #2C3E50;
+.work-item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.work-text {
+  flex: 1;
+}
+
+.work-text h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #002366;
   color: white;
-  display: flex;
-  align-items:flex-start;
-  padding-top:5px;
-  justify-content: center;
-
+  font-size: 14px;
+  padding: 3px 8px;
+  border-radius: 15px;
+  margin-right: 10px;
 }
 
-.small-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  width: 500px; /* Đặt chiều rộng cố định để đảm bảo Small xếp 2 cột */
-
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
 }
 
-.small-box {
-  width: 200px;
-  height: 70px;
-  background-color: #2C3E50;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
 
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
 }
