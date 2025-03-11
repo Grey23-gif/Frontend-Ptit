@@ -1,102 +1,43 @@
-h1 {
-  text-align: left;
-  display: inline-block; 
-  border-bottom: 5px solid #f67979;
-  padding-bottom: 5px; 
-  width: 13%; 
-}
-h2{
-  font-family: Arial, Helvetica, sans-serif;
-  color:rgb(63,70,78);
-}
-p{
-  color:rgb(196, 182, 184);
-  font-size: 24px;
-}
-.img-container {
+.container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start; 
-gap:0px;
-}
-  
-
-.img-container img:first-child {
-  width: 400px;
-  
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
-img{
-  border-radius: 10px;
-
-}
-.img-wrapper {
-  margin-right:200px;
-  margin-left:0px;
-  position: relative; 
+.row {
   display: flex;
-  flex-direction: column;  
-}
-.image-wrapper img {
-  
-  border-radius: 100px;
-}
-.img-wrapper:last-child img {
-  margin-right:200px;
-  margin-top:0px;
-  max-width: 350px; 
-  max-height: 350px; 
+  gap: 10px;
+  align-items: center;
 }
 
-.img-wrapper:last-child .more-btn {
-  margin-top: 95px;
-}
-
-.img-wrapper:last-child {
-  border-right: none; 
-  padding-right: 0;
-}
-.img-wrapper:nth-child(2) {
-  margin-left: -400px;
-  margin-right: -200px; 
-}
-.img-wrapper:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: -90px;
-  top: 0;
-  width: 2px; 
-  height: 795px; 
-  background-color: #5c476f;
-}
-.img-wrapper:last-child::after {
-  display: none;
-}
-button {
-  border: 3px solid rgb(246,131,131); 
-  border-radius: 5px;
-  padding: 20px;
-  width:200px;
-  color: rgb(246,131,131); 
-  background-color: white; 
-  font-weight: bold;
-  font-size: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-
-.more-btn {
-  margin-top: 90px;
-  border: 2px solid rgb(245, 111, 111);
-  color: rgb(245, 111, 111);
-  background-color: white;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-
-.more-btn:hover {
-  background-color:rgb(245, 111, 111);
+.big-box {
+  width: 400px; /* Chiều rộng lớn hơn */
+  height: 145px;
+  background-color: #2C3E50;
   color: white;
+  display: flex;
+  align-items:flex-start;
+  padding-top:5px;
+  justify-content: center;
+
+}
+
+.small-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 500px; /* Đặt chiều rộng cố định để đảm bảo Small xếp 2 cột */
+
+}
+
+.small-box {
+  width: 200px;
+  height: 70px;
+  background-color: #2C3E50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }

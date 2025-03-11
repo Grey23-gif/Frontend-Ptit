@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Layout</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    width: 90%;
+    max-width: 1024px;
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+
+.box {
+    background: #C26700;
+    height: 50px;
+}
+
+.box:nth-child(2) { background: #C26700; }
+.box:nth-child(3) { background: #AABC00; }
+.box:nth-child(4),
+.box:nth-child(5),
+.box:nth-child(6) { background: #3271B8; }
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9),
+.box:nth-child(10) { background: #1C1C1C; }
+
+@media (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box:nth-child(1),
+    .box:nth-child(2),
+    .box:nth-child(3),
+    .box:nth-child(4),
+    .box:nth-child(5),
+    .box:nth-child(6) { grid-column: span 2; }
+
+    .box:nth-child(7),
+    .box:nth-child(8),
+    .box:nth-child(9),
+    .box:nth-child(10) { grid-column: span 1; }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(12, 1fr); 
+    }
+
+    .box:nth-child(1),
+    .box:nth-child(2) { grid-column: span 6; } 
+
+    .box:nth-child(3) { grid-column: span 12; } 
+
+    .box:nth-child(4),
+    .box:nth-child(5),
+    .box:nth-child(6) { grid-column: span 4; }
+
+    .box:nth-child(7),
+    .box:nth-child(8),
+    .box:nth-child(9),
+    .box:nth-child(10) { grid-column: span 3; }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>
