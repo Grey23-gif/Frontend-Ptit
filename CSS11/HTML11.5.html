@@ -4,19 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: whitesmoke;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            width: 90%;
+            max-width: 1200px;
+            display: grid;
+            gap: 10px;
+            padding: 24px;
+            font-size: 30px;
+        }
+        .Logo{
+            color: #A04B4C;
+        }
+        .Icon{
+            background-color: #A04B4C;
+            color: white;
+            padding: 5px;
+            transform: rotate(90deg);
+            display: none;
+        }
+        .box-logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box {
+            background: #A04B4C;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .box-nav{
+            height: 50px;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        .box-big {
+            height: 200px;
+        }
+
+        .box-small {
+            height: 100px;
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .Icon{
+                display: block;
+            }
+            .box-nav{
+                display: none !important;
+            }
+            
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .box-logo { grid-column: span 1; }
+            .box-nav { grid-column: span 3; }
+
+            .box-big { grid-column: span 4; }
+            .box-small { grid-column: span 2; }
+            .Icon{
+                display: none;
+            }
+            .box-nav{
+                display: block;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                grid-template-columns: repeat(12, 1fr);
+            }
+
+            .box-logo { grid-column: span 3; }
+            .box-nav { grid-column: span 9; }
+
+            .box-big { grid-column: span 6; }
+            .box-small { grid-column: span 4; }
+            .Icon{
+                display: none;
+            }
+            .box-nav{
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="box">LOGO</div>
-        <div class="box">#nav</div>
-        <div class="box">#main</div>
-        <div class="box">#aside</div>
-        <div class="box">.column1</div>
-        <div class="box">.column2</div>
-        <div class="box">.column3</div>
-        <div class="box">.column4</div>
-        <div class="box">.column5</div>
-        <div class="box">.column6</div>
+        <div class="box-logo">
+            <div class="Logo">LOGO</div>
+            <div class="Icon">|||</div>
+        </div>
+        <div class="box box-nav">#nav</div>
+        <div class="box box-big">#main</div>
+        <div class="box box-big">#aside</div>
+        <div class="box box-small">.column1</div>
+        <div class="box box-small">.column2</div>
+        <div class="box box-small">.column3</div>
+        <div class="box box-small">.column4</div>
+        <div class="box box-small">.column5</div>
+        <div class="box box-small">.column6</div>
     </div>
 </body>
 </html>
