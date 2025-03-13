@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rikkei Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .card-title {
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .card-body h5{
+            color: white;
+            position: absolute;
+            bottom: 50%;  
+            left: 60%;    
+            transform: translate(-50%, 50%); 
+            width: 100%;
+            padding: 15px;
+        }
+        .icon {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+
+        }
+        .bg-image {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h4>Rikkei cards</h4>
+        <hr>
+        <div class="row g-3 mt-3">
+            <div class="col-md-4">
+                <div class="card position-relative">
+                    <div class="bg-image" style="background-image: url('https://www.blueorigin.com/_next/image?url=https%3A%2F%2Fd1o72l87sylvqg.cloudfront.net%2Fblue-origin%2FBlueMoon_SLD-mooncity.png&w=3840&q=75');"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Short title, long <br>jacket</h5>
+                        <div class=" icon d-flex justify-content-between w-100 px-5">
+                            <div><i class="fa-solid fa-bitcoin-sign"></i></div>
+                            <div >
+                                <i class="fa-solid fa-map-pin"></i> Earth 
+                                <i class="fa-solid fa-calendar-days"></i> 3d
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card position-relative">
+                    <div class="bg-image" style="background-image: url('https://hoatuoi360.vn/uploads/file/hinh-anh-hoa-cuc-van-tho-dep.jpg');"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Much longer<br> title that wraps <br>to multiple lines</h5>
+                        <div class=" icon d-flex justify-content-between w-100 px-5">
+                            <div><i class="fa-solid fa-bitcoin-sign"></i></div>
+                            <div >
+                                <i class="fa-solid fa-map-pin"></i> Pakistan
+                                <i class="fa-solid fa-calendar-days"></i> 4d
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card position-relative">
+                    <div class="bg-image" style="background-image: url('https://c.files.bbci.co.uk/17B58/production/_104921179_2.jpg');"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Another longer<br> title belongs<br> here</h5>
+                        <div class=" icon d-flex justify-content-between w-100 px-5">
+                            <div><i class="fa-solid fa-bitcoin-sign"></i></div>
+                            <div >
+                                <i class="fa-solid fa-map-pin"></i> California 
+                                <i class="fa-solid fa-calendar-days"></i> 5d
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
