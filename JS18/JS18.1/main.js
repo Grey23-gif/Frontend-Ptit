@@ -5,5 +5,5 @@ if(num%2==0)
     alert("Là số chẳn.");
 }
 else{
-    alert("Là số lẻ.")
+    alert("Là số lẻ");
 }
