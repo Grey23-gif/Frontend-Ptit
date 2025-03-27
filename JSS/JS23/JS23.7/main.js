@@ -1,7 +1,7 @@
 let n = parseInt(prompt("Nhập số lượng phần tử:"));
-if(isNaN(n) || n < 1) {
+if (isNaN(n) || n < 1) {
     alert("Số lượng phần tử không hợp lệ!");
-}   
+}
 let arr = [];
 let num_max;
 let num_second_max;
@@ -17,6 +17,6 @@ for (let i = 0; i < n; i++) {
         num_second_max = arr[i];
     }
 }
-console.log(`Số lớn thứ hai trong mảng là: ${num_second_max}`);  
+console.log(`Số lớn thứ hai trong mảng là: ${num_second_max}`);
 
 
