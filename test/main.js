@@ -1,26 +1,23 @@
-let numbers=parseInt(prompt("Nhập số bất kì: "));
 
-if (isNaN(numbers)|| numbers<0){
-    console.log("Số không hợp lệ");
+const n = parseInt(prompt('Nhập số lượng phần tử của mảng: '));
+const arr = [];
+
+
+for (let i = 0; i < n; i++) {
+    arr.push(parseInt(prompt(`Nhập phần tử thứ ${i + 1}: `)));
 }
 
-else {
-    let count =0;
-    let num=2;
-    let result="";
-    while(count<numbers){
-        let isPrime=true;
-        for(let i=2; i<=Math.sqrt(num); i++){
-            if(num%i==0){
-                isPrime=false;
-                break;
-            }
+// kiểm tra mảng có phải là dãy Fibonacci không
+let kiemTra = true;
+if (arr.length < 3) {
+    kiemTra = false;
+} else {
+    for (let i = 2; i < arr.length; i++) {
+        if (arr[i] !== arr[i - 1] + arr[i - 2]) {
+            kiemTra = false;
+            break;
         }
-        if(isPrime){
-            result+=num+" ";
-            count++;
-        }
-        num++;
     }
-    console.log("Các số nguyên tố đầu tiên trong " + numbers + " số là: " + result);
 }
+
+console.log(kiemTra ? 'Mảng là dãy Fibonacci' : 'Mảng không phải là dãy Fibonacci');
