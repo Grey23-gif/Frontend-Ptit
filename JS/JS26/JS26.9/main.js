@@ -5,11 +5,9 @@ function enter_arr (arr) {
     }
 }
 function check_arr (arr) {
-    let totaleven = 0;
-    let totalodd = 0;
-
-    totaleven = arr.filter(arr => arr % 2 === 0).reduce((acc, curr) => acc + curr, 0);
-    totalodd = arr.filter(arr => arr % 2 !== 0).reduce((acc, curr) => acc + curr, 0);
+    
+    let totaleven = arr.filter(arr => arr % 2 === 0).reduce((acc, curr) => acc + curr, 0);
+    let totalodd = arr.filter(arr => arr % 2 !== 0).reduce((acc, curr) => acc + curr, 0);
     
     console.log("Tổng các số chẵn trong mảng là: " + totaleven);
     console.log("Tổng các số lẻ trong mảng là: " + totalodd);
