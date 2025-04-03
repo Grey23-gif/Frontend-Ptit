@@ -1,23 +1,14 @@
-
-const n = parseInt(prompt('Nhập số lượng phần tử của mảng: '));
-const arr = [];
-
-
-for (let i = 0; i < n; i++) {
-    arr.push(parseInt(prompt(`Nhập phần tử thứ ${i + 1}: `)));
+let students = [
+    { name: "Trần Trí Dương", scores: { math: 9, english: 8, literature: 7 } },
+    { name: "Hà Bích Ngọc", scores: { math: 3, english: 2, literature: 5 } },
+    { name: "Bùi Thái Sơn", scores: { math: 9.5, english: 9, literature: 9 } }
+];
+function filterTopStudents(students) {
+    return students.filter(student => {
+        const { math, english, literature } = student.scores;
+        const average = (math + english + literature) / 3;
+        return average >= 8;
+    });
 }
-
-// kiểm tra mảng có phải là dãy Fibonacci không
-let kiemTra = true;
-if (arr.length < 3) {
-    kiemTra = false;
-} else {
-    for (let i = 2; i < arr.length; i++) {
-        if (arr[i] !== arr[i - 1] + arr[i - 2]) {
-            kiemTra = false;
-            break;
-        }
-    }
-}
-
-console.log(kiemTra ? 'Mảng là dãy Fibonacci' : 'Mảng không phải là dãy Fibonacci');
+const topStudents = filterTopStudents(students);
+console.log(topStudents);
