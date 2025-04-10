@@ -1,7 +1,9 @@
-let button = document.querySelector("#click-me");
+let button = document.querySelector("#check");
 let countSpan = document.querySelector("#count");
-let check = 0;
-button.addEventListener('click', function(){
-    check++;
-    countSpan.textContent = check;
+let textarea = document.querySelector("#textarea");
+
+button.addEventListener('click', function () {
+    const inputText = textarea.value.trim();
+    const soKyTu = inputText.replace(/\s/g, "").length; 
+    countSpan.textContent = soKyTu || 0;
 });

@@ -32,7 +32,7 @@ if (todoList.length > 0) {
         span.addEventListener("click", function () {
             const index = todoList.findIndex(todo => todo.task === item.task);
             if (index !== -1) {
-                todoList.splice(index, 1); // Xóa khỏi mảng
+                todoList.splice(index, 1); // Xóa khỏi mảng 
                 renderTodoList(); // Cập nhật giao diện
             }
         });

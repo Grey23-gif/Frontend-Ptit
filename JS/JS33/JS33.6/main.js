@@ -1,19 +1,59 @@
-const text = document.getElementById("text");
-const increaseBtn = document.getElementById("increase");
-const decreaseBtn = document.getElementById("decrease");
+const weatherData = {
+    "Hà Nội": {
+        temperature: 25,
+        humidity: 70,
+        windSpeed: 5,
+        description: "Có mây",
+        icon: "☁️"
+    },
+    "Hồ Chí Minh": {
+        temperature: 32,
+        humidity: 75,
+        windSpeed: 7,
+        description: "Nắng",
+        icon: "☀️"
+    },
+    "Đà Nẵng": {
+        temperature: 28,
+        humidity: 82,
+        windSpeed: 12,
+        description: "Mưa rào",
+        icon: "🌧️"
+    }
+};
 
-let fontSize = 16; // Kích thước chữ mặc định (px)
+document.querySelector("#searchButton").addEventListener("click", () => {
+    const cityInput = document.querySelector("#cityInput").value.trim().toLowerCase();
+    const resultContainer = document.querySelector("#result");
 
-// Sự kiện tăng kích thước chữ
-increaseBtn.addEventListener("click", function () {
-    fontSize += 2; // Tăng kích thước chữ thêm 2px
-    text.style.fontSize = fontSize + "px";
+    const cityKey = Object.keys(weatherData).find(
+        city => city.toLowerCase() === cityInput
+    );
+
+    if (cityKey) {
+        const { temperature, humidity, windSpeed, description, icon } = weatherData[cityKey];
+        resultContainer.innerHTML = `
+            <h2>${cityKey}</h2>
+            <div class="Content">
+                <div class="icon">
+                    <p>${icon}</p>
+                </div>
+                <div class="temperature">
+                    <p>${temperature}°C</p>
+                </div>
+                <div>
+                    <p>${description}</p>
+                    <p>Độ ẩm: ${humidity}%</p>
+                    <p>Tốc độ gió: ${windSpeed} km/h</p>
+                </div>    
+            </div>
+        `;
+    } else {
+        resultContainer.innerHTML = `<p>Thành phố không tồn tại trong danh sách.</p>`;
+    }
 });
 
-// Sự kiện giảm kích thước chữ
-decreaseBtn.addEventListener("click", function () {
-    if (fontSize > 6) { // Đảm bảo kích thước chữ không quá nhỏ
-        fontSize -= 2; // Giảm kích thước chữ đi 2px
-        text.style.fontSize = fontSize + "px";
-    }
+document.querySelector("#clearButton").addEventListener("click", () => {
+    document.querySelector("#cityInput").value = "";
+    document.querySelector("#result").innerHTML = "";
 });

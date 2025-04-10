@@ -1,12 +1,13 @@
-let changeColor = document.querySelector("#change-color");
-let backg = document.querySelector(".container");
+// ...existing code...
 
-function getRandomColor(){
-    const r =  Math.floor(Math.random()*256);
-    const g =  Math.floor(Math.random()*256);
-    const b =  Math.floor(Math.random()*256);
-    return `rgb(${r},${g},${b})`;
-}   
-changeColor.addEventListener('click',function(){
-    backg.style.backgroundColor = getRandomColor();
+const passwordInput = document.getElementById("password");
+const togglePasswordButton = document.getElementById("toggle-password");
+
+togglePasswordButton.addEventListener("click", function (e) {
+    e.preventDefault(); // Ngăn chặn hành động mặc định của nút
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text"; // Đổi sang hiển thị mật khẩu
+    } else {
+        passwordInput.type = "password"; // Đổi sang ẩn mật khẩu
+    }
 });
