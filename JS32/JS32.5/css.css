@@ -1,0 +1,10 @@
+.container{
+    width: 80%;
+    background-color: #F4F4F4;
+}
+.button{
+    background-color: #28A745;
+}
+.button-delete{
+    background-color: #FF0000;
+}

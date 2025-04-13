@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css.css" />
+    <style>
+      .checked {
+        text-decoration: line-through;
+      }
+      .close {
+        margin-left: 10px;
+        color: red;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myDIV" class="header">
+      <h2 style="margin: 5px">My To Do List</h2>
+      <input type="text" id="myInput" placeholder="Title..." />
+      <span class="addBtn" onclick="addTask()">Add</span>
+    </div>
+
+    <h1>Todo List</h1>
+    <ul id="myUL" class="myUL">
+      <!-- dữ liệu mẫu ko được sử dụng  -->
+      <li>Pay bills <span class="close">X</span></li>
+      <li class="checked">Pay bills <span class="close">X</span></li>
+    </ul>
+    <script src="main.js"></script>
+  </body>
+</html>
