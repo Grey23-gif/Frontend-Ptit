@@ -1,83 +1,85 @@
-* {
+ /*luoi css qua  */
+ body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: Arial, sans-serif;
-}
-
-body {
-  background-color: #f6f7fb;
-  padding: 40px;
+  background-color: #2b1d4a;
+  color: white;
 }
 
 .container {
-  background: #fff;
-  padding: 20px;
-  width: 850px;
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
+  padding: 30px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-form {
+h1 {
+  margin-bottom: 20px;
+  background-color: #442c74;
+  padding: 10px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.bookmarks {
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
   flex-wrap: wrap;
+  gap: 15px;
   justify-content: center;
+  margin-top: 20px;
 }
 
-form input, form select {
-  padding: 8px;
-  font-size: 14px;
+.bookmark {
+  background-color: #3e2e5c;
+  padding: 15px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  color: white;
 }
 
-form button {
-  padding: 8px 16px;
-  background: #007bff;
+.bookmark span {
+  font-weight: bold;
+}
+.bookmark button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: crimson;
   color: white;
   border: none;
+  padding: 3px 6px;
+  border-radius: 3px;
   cursor: pointer;
 }
 
-form button:hover {
-  background: #0056b3;
+.modal {
+  margin-top: 40px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal h2 {
+  text-align: start;
+  margin-bottom: 20px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table thead {
-  background: #f0f0f0;
-}
-
-table th, table td {
+.modal input {
+  width: 90%;
   padding: 10px;
-  border: 1px solid #ccc;
-  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.action-btn {
-  padding: 4px 10px;
-  margin: 0 2px;
+.modal button {
+  background-color: purple;
+  color: white;
+  padding: 10px 20px;
   border: none;
+  width: 100%;
+  border-radius: 5px;
   cursor: pointer;
-}
-
-.edit-btn {
-  border: 1px solid #6c6c6c;
-  border-radius: 5px;
-  color: #0f182a;
-}
-
-.delete-btn {
-  border: 1px solid #6c6c6c;
-  border-radius: 5px;
-  color: #0f182a;
 }
