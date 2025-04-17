@@ -1,6 +1,6 @@
 document.getElementById("registerForm").addEventListener("submit", function (e) {
   e.preventDefault();
-
+  
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
@@ -47,7 +47,7 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
 
     message.style.color = "green";
     message.textContent = "Đăng ký thành công!";
-
+    
     // Reset form
     document.getElementById("registerForm").reset();
   });

@@ -3,28 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style>
+        .radio-label {
+          position: relative;
+          padding-left: 28px;
+        }
+
+        .radio-label::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 2px;
+          width: 18px;
+          height: 18px;
+          border: 2px solid #0d6efd;
+          border-radius: 50%;
+          background-color: white;
+        }
+
+        input[type="radio"] {
+          display: none;
+        }
+
+        input[type="radio"]:checked + .radio-label::before {
+          background-color: #0d6efd;
+        }
+      </style>
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form id="loginForm" onsubmit="event.preventDefault(); checkEmailPass();">
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter your email address" required>
-            
-            <label for="password">Password:</label>
-            <input type="password" id="password" placeholder="Enter your password" required>
-            
-            <button type="submit">Login</button>
-        </form>
-        <div class="login-links">
-            <a href="#">Forgot password?</a>
-            <span>or</span>
-            <a href="../signup/index.html">SignUp</a>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"></script>
-    <script src="main.js" defer></script>
+      <div class="radio-wrap">
+        <input type="radio" name="color" id="blue1" checked>
+        <label for="blue1" class="radio-label">Option 1</label>
+
+        <input type="radio" name="color" id="blue2">
+        <label for="blue2" class="radio-label">Option 2</label>
+      </div>
 </body>
 </html>
+​​​
+Shift + Enter to add a new line
